@@ -1,8 +1,9 @@
 import './App.css'
+import Player from './Player'
 import Todo from './Todo'
 
 function App() {
-  
+  const players = ['cristiano Ronaldo','Sergio Ramos','Thiago Silva']
 
   return (
     <>  
@@ -16,6 +17,12 @@ function App() {
       <Todo task='Learn React Core concept' isDone={true}></Todo>
       <Todo task='Learn Node.js Core concept' isDone={false}></Todo>
       <Todo task='Learn Tailwind Core concept' isDone={true}></Todo>
+
+      <div className='players'>
+        {
+          players.map(player => <Player player={player}></Player>)
+        }
+      </div>
       
     </>
   )
