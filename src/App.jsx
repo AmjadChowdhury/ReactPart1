@@ -2,6 +2,7 @@ import './App.css'
 import Counter from './Counter'
 import Player from './Player'
 import Todo from './Todo'
+import Users from './Users'
 
 function App() {
   const players = ['cristiano Ronaldo','Sergio Ramos','Thiago Silva']
@@ -33,6 +34,7 @@ function App() {
       <button onClick={handleClick}>Click me</button>
 
       <Counter></Counter>
+      <Users></Users>
       
     </>
   )
