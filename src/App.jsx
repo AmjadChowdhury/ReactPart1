@@ -1,4 +1,5 @@
 import './App.css'
+import Todo from './Todo'
 
 function App() {
   
@@ -12,6 +13,9 @@ function App() {
       <Student></Student>
       <Device name='laptop' price= '55'></Device>
       <Device name='Mobile' price= '40'></Device>
+      <Todo task='Learn React Core concept' isDone={true}></Todo>
+      <Todo task='Learn Node.js Core concept' isDone={false}></Todo>
+      <Todo task='Learn Tailwind Core concept' isDone={true}></Todo>
       
     </>
   )
