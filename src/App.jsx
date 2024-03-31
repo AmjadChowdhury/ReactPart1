@@ -1,13 +1,18 @@
 import './App.css'
+import Counter from './Counter'
 import Player from './Player'
 import Todo from './Todo'
 
 function App() {
   const players = ['cristiano Ronaldo','Sergio Ramos','Thiago Silva']
 
+  const handleClick = () => {
+    alert('Click korsi btn')
+  }
+
   return (
     <>  
-      <h1>Vite + React</h1>
+      <h1>Explore React Part-1</h1>
       <Person></Person>
       <Student grade='7' score='85'></Student>
       <Student grade='10' score='95'></Student>
@@ -20,9 +25,14 @@ function App() {
 
       <div className='players'>
         {
-          players.map(player => <Player player={player}></Player>)
+          players.map((player,idx) => <Player key={idx} player={player}></Player>)
         }
       </div>
+
+      <h1>Explore React Part-2</h1>
+      <button onClick={handleClick}>Click me</button>
+
+      <Counter></Counter>
       
     </>
   )
